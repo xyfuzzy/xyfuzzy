@@ -12,7 +12,7 @@ public class App {
     private static void ReadEBCDICFile() {
         try { 
             
-            String inputfile = "Z30FMNW-XDMP-COPY-G0152V00.bin";
+            String inputfile;
 
             System.out.println("++++++++++ EBCDIC FIMA READER ++++++++++");
             System.out.print("File Name: ");
@@ -23,6 +23,7 @@ public class App {
             if(userChoice.length()>0) {
                 inputfile = userChoice;
             }
+            
             
             File inputFileName = new File(inputfile);
 
